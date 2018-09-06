@@ -1,0 +1,17 @@
+import numpy as np
+
+drink = 1.0
+rain = 1.0
+friend = 1.0
+
+
+def activation_function(x):
+    if x >= 0.5:
+        return 1
+    else:
+        return 0
+
+def predict(drink, rain, friend):
+    inputs = np.array([drink, rain, friend])
+    weights_input_to_hidden_1 = [0.25, 0.25, 0]
+    
